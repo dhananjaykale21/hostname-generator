@@ -1,31 +1,33 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    padding: 20px;
+body{
+    font-family:Arial;
+    background:#f4f4f4;
 }
 
-.container {
-    max-width: 700px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
+.container{
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
 }
 
-input,
-select,
-button {
-    width: 100%;
-    margin-top: 8px;
-    margin-bottom: 15px;
-    padding: 10px;
+input,select,button{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    margin-bottom:15px;
 }
 
-.dark {
-    background: #1e1e1e;
-    color: white;
+.preview-box{
+    background:#eef5ff;
+    border:1px solid #d0e0ff;
+    padding:15px;
+    margin-bottom:20px;
+    border-radius:8px;
 }
 
-.dark .container {
-    background: #2d2d2d;
+#preview{
+    font-size:28px;
+    font-weight:bold;
+    color:#0046ad;
 }
