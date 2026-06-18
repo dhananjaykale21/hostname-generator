@@ -73,3 +73,50 @@
 </body>
 </html>
 
+<select id="region">
+    <option value="de">de - Germany</option>
+    <option value="us">us - United States</option>
+    <option value="ap">ap - Asia Pacific</option>
+</select>
+
+<select id="platform">
+    <option value="az">az - Azure</option>
+    <option value="gcp">gcp - Google Cloud Platform</option>
+    <option value="pvc">pvc - Private Cloud</option>
+</select>
+
+<select id="resource">
+    <option value="sv">sv - Server</option>
+    <option value="ws">ws - Workstation</option>
+    <option value="cl">cl - Cluster</option>
+    <option value="lb">lb - Load Balancer</option>
+    <option value="vi">vi - Virtual Instance</option>
+</select>
+
+<select id="purpose">
+    <option value="m">m - Management</option>
+    <option value="n">n - Network</option>
+    <option value="s">s - Shared</option>
+    <option value="i">i - Integration</option>
+    <option value="b">b - Business</option>
+</select>
+
+<div class="rules">
+<h3>Hostname Naming Standard</h3>
+
+<pre>
+Region Location : de / us / ap        [2]
+Platform        : gcp / az / pvc      [2-3]
+Resource Type   : sv / ws / cl / lb / vi [2]
+Purpose         : m / n / s / i / b   [1]
+Project Name    : xxx                 [3]
+Environment     : 1 / 3 / 5 / 7 / 9   [1]
+Number          : 01-99               [2]
+
+Format:
+<region><platform><resource><purpose><project><env><number>
+
+Example:
+deazsvmwel101
+</pre>
+</div>
